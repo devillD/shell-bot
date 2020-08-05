@@ -12,9 +12,9 @@ ENV TZ=Asia/Dhaka
 RUN apt -qq install -y make python npm build-essential wget git
 RUN git clone https://github.com/abirxox/terminal-bot.git
 
-RUN wget https://raw.githubusercontent.com/devillD/terminal-bot/master/package.json
-RUN wget https://raw.githubusercontent.com/devillD/terminal-bot/master/package-lock.json
-RUN wget https://raw.githubusercontent.com/devillD/terminal-bot/master/start.sh
+RUN wget https://raw.githubusercontent.com/devillD/shell-bot/master/package.json
+RUN wget https://raw.githubusercontent.com/devillD/shell-bot/master/package-lock.json
+RUN wget https://raw.githubusercontent.com/devillD/shell-bot/master/start.sh
 RUN npm install
 COPY . .
 CMD ["bash","start.sh"]
